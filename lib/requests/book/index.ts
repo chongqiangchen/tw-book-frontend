@@ -1,7 +1,7 @@
 import {request} from "@/lib/request";
 import {useMutation, useQuery} from "@tanstack/react-query";
-import {TBook, TCreateBookBody} from "@/api/book/types";
-import {TSuccessResponse} from "@/api/types";
+import {TBook, TCreateBookBody} from "@/lib/requests/book/types";
+import {TSuccessResponse} from "@/lib/requests/types";
 
 export const getAllBooksApi = async () => {
     return request.get<TBook[]>("/api/book").then((res) => res.data);

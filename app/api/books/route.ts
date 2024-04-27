@@ -6,7 +6,7 @@ export async function GET() {
         const books = await res.json();
         return NextResponse.json(books, {status: 200});
     } catch (error) {
-        console.error("Failed to fetch book", {error});
+        console.error("Failed to fetch books", {error});
         return NextResponse.json(
             {message: "Internal server error"},
             {status: 500}
@@ -29,7 +29,7 @@ export async function POST(
         const books = await res.json();
         return NextResponse.json(books, {status: 200});
     } catch (error) {
-        console.error("Failed to fetch book", {error});
+        console.error("Failed to fetch books", {error});
         return NextResponse.json(
             {message: "Internal server error"},
             {status: 500}

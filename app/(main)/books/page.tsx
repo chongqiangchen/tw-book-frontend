@@ -4,7 +4,7 @@ import {Separator} from "@/components/ui/separator";
 import {ScrollArea} from "@/components/ui/scroll-area";
 import BookCard from "@/app/(main)/books/components/book-card";
 import {AddBookModal} from "@/app/(main)/books/components/add-book-modal";
-import {useGetAllBooks} from "@/api/book";
+import {useGetAllBooks} from "@/lib/requests/book";
 
 
 export default function BookPage() {

@@ -4,8 +4,8 @@ import Image from "next/image"
 import {
     Card,
 } from "@/components/ui/card"
-import {TBook} from "@/api/book/types";
-import {useDeleteBook} from "@/api/book";
+import {TBook} from "@/lib/requests/book/types";
+import {useDeleteBook} from "@/lib/requests/book";
 import {queryClient} from "@/app/providers";
 import {toast} from "sonner";
 import {Pencil, Trash} from "lucide-react";

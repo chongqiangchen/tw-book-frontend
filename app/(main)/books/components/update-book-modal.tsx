@@ -16,7 +16,7 @@ import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage} from "@/
 import {useForm} from "react-hook-form";
 import {z} from "zod"
 import {zodResolver} from "@hookform/resolvers/zod";
-import {useGetBookById, useUpdateBook} from "@/api/book";
+import {useGetBookById, useUpdateBook} from "@/lib/requests/book";
 import {toast} from "sonner";
 import {queryClient} from "@/app/providers";
 import {Pencil} from "lucide-react";
