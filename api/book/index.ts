@@ -4,22 +4,22 @@ import {TBook, TCreateBookBody} from "@/api/book/types";
 import {TSuccessResponse} from "@/api/types";
 
 export const getAllBooksApi = async () => {
-    return request.get<TBook[]>("/api/books").then((res) => res.data);
+    return request.get<TBook[]>("/api/book").then((res) => res.data);
 }
 
 export const getBookByIdApi = async (id: number) => {
-    return request.get<TBook>(`/api/books/${id}`).then((res) => res.data);
+    return request.get<TBook>(`/api/book/${id}`).then((res) => res.data);
 }
 
 export const createBookApi = (body: TCreateBookBody) => {
-    return request.post<TSuccessResponse>("/api/books", body);
+    return request.post<TSuccessResponse>("/api/book", body);
 }
 export const deleteBookApi = async (id: number) => {
-    return request.delete(`/api/books/${id}`);
+    return request.delete(`/api/book/${id}`);
 }
 
 export const updateBookApi = async (id: number, body: TCreateBookBody) => {
-    return request.put(`/api/books/${id}`, body);
+    return request.put(`/api/book/${id}`, body);
 }
 
 export const useGetAllBooks = () => {
